@@ -63,20 +63,20 @@ turtles = ["Raph", "Leo", "Mickey", "Donny"]
         * Collections of key, value pairs
         * python type `dict()` or the literal `{'key':'value'}`
         * methods to know
-            `.get()` return the value of a give key, or a default value if its not found
-            `.values()` returns a `list` of values in the Dictionary
-            `.keys()` returns a `list` of keys in the Dictionary 
+            * `.get()` return the value of a give key, or a default value if its not found
+            * `.values()` returns a `list` of values in the Dictionary
+            * `.keys()` returns a `list` of keys in the Dictionary 
     * [Booleans](https://docs.python.org/3/library/stdtypes.html#boolean-values)
         * Represents something that is `True` or `False` 
-        * python type 'bool()' or the literal 'True'
+        * python type `bool()` or the literal `True` or `False`
     * [Range](https://docs.python.org/3/library/stdtypes.html#range)
-        * `Range` is a special type that represents range of numbers
+        * `Range()` is a special type that represents range of numbers
     * [None](https://docs.python.org/3/library/stdtypes.html#the-null-object)
         * nothing, nothing at all
-        * python type ... there inst one only the literal `None`
+        * python type ... there is one way, the literal way `None`
 
 ### Notable built in functions
-* `len()` return the length of the given sequence
+* `len()` return the length of the given *sequence*
 * `help()` shows help documentation of the given object
 * `dir()` show the available methods of the give object
 
@@ -99,7 +99,7 @@ Python comes with the following symbols for mathematical operators.
 * `!=` not equal
 * `<` less then
 * `<=` less then or equal to
-* > greater then
+* `>` greater then
 * `>=` greater then or equal to
 
 
@@ -107,7 +107,7 @@ Python comes with the following symbols for mathematical operators.
 
 * Now we have reached `if/else` statements
 * If an expression you passed in is `True` do something
-* Else do something else
+* `else` do something `else`
 
 ```python
 if expression == true:
@@ -126,7 +126,7 @@ else:
     print("Your number is puny")
 ```
 * Things to note
-    * Put a colon after the expression you want to evaluate
+    * Put a colon after the expression you want to evaluate to start the `if` body
     * `if` to `elif` to `else`
     * indents show what code is part of the body of the statement and where it ends
 
