@@ -164,9 +164,53 @@ def my_name():
 * This follows the concept of **DRY - Don't Repeat Yourself**
 * Functions can also take arguments. These allow our functions to be more dynamic
 
-```python3
-def add(name):
+```python
+def my_name(name):
     return "My name is " + name
 ```
 
 * When there is no `return` statement, the function *implicitly* returns `None`
+
+### `for` loops
+
+`for` loops *iterate* over a *sequence*. There are 2 parts to a `for` loop, the *statement* and the *body*. The *statement* tells the loop what to *iterate* over and *assigns* the loop variable. The body tells python what to do in each iteration. Before each iteration the loop variable is assigned to the next value in the *sequence*, in oder from the zero index to the last item.
+
+```python
+teachers = ['billy', 'tom', 'jason', 'jeff']
+for teacher in teachers:
+    print( teacher.capitalize() )
+```
+
+In this loop we *iterate* over each teacher in the loop and print there name capitalized.
+
+### `while` loops
+
+Unlike `for` loops, `while` are not bound to a sequence and can continue for ever.
+like a `for` loop, `while` loops have 2 parts, an *statement* and a body.
+
+```python
+num = input('Please enter a whole number: ')
+while not num.isdigit():
+    print('Not a whole number!')
+    num = input('Please enter a whole number: ')
+```
+
+
+### loop control
+There are 2 ways can control what loops. They both with `for` and `while` loops in the same way.
+
+* [`break`](https://docs.python.org/3/reference/simple_stmts.html#break)
+    The `break` *statement* stops loop and allows python to move on to the rest of the script. If you are using a `while` loop, you should have a break *statement* to stop the loop.
+```python
+count = 1
+while True:
+    count *= count
+    if count > 100: break
+```
+* [`continue`](https://docs.python.org/3/reference/simple_stmts.html#continue)
+    The `continue` *statement* skips to the next iteration of the loop. Generally, `continue` statement are at the top of the loop body.
+```python
+for num in range(100):
+    if num%10 != 0: continue
+    print(num)
+```
